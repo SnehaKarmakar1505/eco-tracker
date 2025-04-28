@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Eco Tracker - Carbon Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div id="progressContainer" style="margin-top:20px;">
+        <label>Your Eco-Friendliness:</label>
+        <progress id="ecoProgress" value="0" max="100" style="width:100%;"></progress>
+      </div>
+      
+    <h1>🌍 Eco-Tracker: Carbon Footprint Calculator</h1>
+    <form id="carbonForm">
+      <label>🚗 How many kilometers you drive per week?</label>
+      <input type="number" id="driveKm" required>
+
+      <label>⚡ How many kWh electricity you use per month?</label>
+      <input type="number" id="electricityUse" required>
+
+      <label>🍗 How many meat-based meals per week?</label>
+      <input type="number" id="meatMeals" required>
+
+      <button type="submit">Calculate My Carbon Footprint</button>
+    </form>
+
+    <div id="result"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
